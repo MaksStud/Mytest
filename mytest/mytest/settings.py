@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'daphne',
+    'main',
     'channels',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -75,7 +77,7 @@ CHANNEL_LAYERS = {
 }
 
 WSGI_APPLICATION = 'mytest.wsgi.application'
-ASGI_APPLICATION = 'mytest.asgi.application'
+ASGI_APPLICATION = "mytest.routing.application"
 
 
 
